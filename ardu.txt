@@ -1,0 +1,20 @@
+#include <Servo.h> // galiba gereksiz ama kalsýn :D
+int osol;
+int osag;
+int asol;
+int asag;
+
+void setup() {
+  pinMode(A1,OUTPUT);
+  pinMode(A2,OUTPUT);
+  pinMode(A3,OUTPUT);
+  pinMode(A4,OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  analogWrite(osol,255); // 255 yerine bluetooth dan gelen
+  analogWrite(osag,255); // verileri yerleþtiricezzz
+  analogWrite(asol,255); // galiba Serial.read(A5);
+  analogWrite(asag,255); // ama analog giriþlerimiz bitti wtf
+}
